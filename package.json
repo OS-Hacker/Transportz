@@ -1,0 +1,13 @@
+{
+  "name": "transport-application-main",
+  "version": "1.0.0",
+  "description": "## Overview The Transport Application is a robust and scalable solution designed to provide seamless user and admin functionalities for managing transportation services. The project is divided into two main sections: - **Frontend**: Built with React for a dynamic and responsive user interface. - **Backend**: Developed using Node.js and Express.js for server-side operations, following the MVC architecture.",
+  "main": "App.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
