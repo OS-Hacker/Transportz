@@ -24,6 +24,9 @@ App.use(bookingRouter);
 // Connect to database
 connectdb();
 
+App.listen(process.env.PORT, () =>
+  console.log(`Server is running on ${process.env.PORT}`)
+);
 
 // Deployment setup
 const dirPath = path.resolve();
@@ -35,6 +38,3 @@ if (process.env.NODE_ENV === "PRODUCTION") {
   });
 }
 
-App.listen(process.env.PORT, () =>
-  console.log(`Server is running on ${process.env.PORT}`)
-);
